@@ -2,8 +2,22 @@
   box-sizing: border-box;
 }
 
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 body {
   max-width: 1366px;
+  margin: 0;
   font-family: "Lato", Arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
@@ -73,6 +87,7 @@ body {
   font-family: "Rubik", Arial, sans-serif;
   font-weight: 700;
   font-size: 36px;
+  line-height: 43px;
   text-align: center;
 }
 
@@ -180,6 +195,7 @@ body {
 
 .review__list {
   display: flex;
+  width: 1470px;
 }
 
 .review__item {
@@ -200,6 +216,11 @@ body {
   margin-bottom: 25px;
 }
 
+.review__details {
+  display: flex;
+  justify-content: space-between;
+}
+
 .review__author {
   font-size: 14px;
   color: #848484;
@@ -216,13 +237,35 @@ body {
   padding: 0;
 }
 
+.contacts__header {
+  margin-bottom: 50px;
+  text-align: left;
+}
+
 .contacts__details {
   width: 568px;
   padding-left: 198px;
-  padding-top: 70px;
-  padding-right: 20px;
-  padding-bottom: 70px;
+  padding-top: 65px;
   background-color: #fac663;
+}
+
+.contacts__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.contacts__detail--link {
+  display: block;
+}
+
+.contacts__detail {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.map {
+  width: 798px;
 }
 
 .map iframe {
