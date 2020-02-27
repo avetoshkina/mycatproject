@@ -17,7 +17,7 @@
 
 body {
   max-width: 1366px;
-  margin: 0;
+  margin: 0 auto;
   font-family: "Lato", Arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
@@ -123,9 +123,10 @@ body {
 }
 
 .advantages__item {
+  position: relative;
   width: 370px;
-  margin-bottom: 20px;
   min-height: 321px;
+  margin-bottom: 20px;
   padding-left: 30px;
   padding-top: 156px;
   padding-right: 31px;
@@ -141,8 +142,74 @@ body {
   margin: 0;
 }
 
+.advantages__item--temperature::before {
+  position: absolute;
+  content: "";
+  top: 30px;
+  left: 30px;
+  width: 91px;
+  height: 91px;
+  background-image: url("../img/temperature.svg");
+  background-repeat: no-repeat;
+}
+
+.advantages__item--cctv::before {
+  position: absolute;
+  content: "";
+  top: 30px;
+  left: 30px;
+  width: 91px;
+  height: 91px;
+  background-image: url("../img/cctv.svg");
+  background-repeat: no-repeat;
+}
+
+.advantages__item--taxi::before {
+  position: absolute;
+  content: "";
+  top: 30px;
+  left: 30px;
+  width: 91px;
+  height: 91px;
+  background-image: url("../img/taxi.svg");
+  background-repeat: no-repeat;
+}
+
+.advantages__item--food::before {
+  position: absolute;
+  content: "";
+  top: 30px;
+  left: 30px;
+  width: 91px;
+  height: 91px;
+  background-image: url("../img/food.svg");
+  background-repeat: no-repeat;
+}
+
+.advantages__item--cat::before {
+  position: absolute;
+  content: "";
+  top: 30px;
+  left: 30px;
+  width: 91px;
+  height: 91px;
+  background-image: url("../img/cat.svg");
+  background-repeat: no-repeat;
+}
+
+.advantages__item--hand::before {
+  position: absolute;
+  content: "";
+  top: 30px;
+  left: 30px;
+  width: 91px;
+  height: 91px;
+  background-image: url("../img/hand.svg");
+  background-repeat: no-repeat;
+}
+
 .rooms {
-  background-image: url("img/fish.svg");
+  background-image: url("../img/fish.svg");
   background-size: 484px 151px;
   background-repeat: no-repeat;
   background-position: top left;
@@ -172,6 +239,7 @@ body {
 }
 
 .rooms__description-item {
+  position: relative;
   margin-bottom: 20px;
   padding-left: 21px;
 }
@@ -180,22 +248,32 @@ body {
   margin-bottom: 0;
 }
 
+.rooms__description-item::before {
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 0;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #fac663;
+}
+
 .btn--room-booking {
   margin-bottom: 40px;
 }
 
 .review {
-  position: relative;
-  overflow: hidden;
-}
-
-.review__wrapper {
-  margin-left: 98px;
+  background-image: url("../img/paw.svg");
+  background-size: 312px 267px;
+  background-repeat: no-repeat;
+  background-position: top -100px right -50px;
 }
 
 .review__list {
   display: flex;
   width: 1470px;
+  margin-left: 98px;
 }
 
 .review__item {
@@ -205,6 +283,10 @@ body {
   padding-top: 35px;
   padding-right: 38px;
   padding-bottom: 35px;
+  background-image: url("../img/quotes.svg");
+  background-size: 27px 30px;
+  background-position: top 35px left 35px;
+  background-repeat: no-repeat;
 }
 
 .review__item:nth-last-child(1) {
@@ -251,7 +333,7 @@ body {
 
 .contacts__title {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   font-weight: 600;
 }
 
@@ -261,7 +343,45 @@ body {
 
 .contacts__detail {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
+  line-height: 19px;
+}
+
+.social__item {
+  position: relative;
+}
+
+.social__item--facebook::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  background-image: url("../img/facebook.svg");
+  background-repeat: no-repeat;
+}
+
+.social__item--instagram::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 42px;
+  width: 22px;
+  height: 22px;
+  background-image: url("../img/instagram.svg");
+  background-repeat: no-repeat;
+}
+
+.social__item--vk::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 84px;
+  width: 22px;
+  height: 22px;
+  background-image: url("../img/vk.svg");
+  background-repeat: no-repeat;
 }
 
 .map {
@@ -318,11 +438,19 @@ body {
   text-align: left;
   color: #1a212f;
   background-color: #ffffff;
+  background-image: url("../img/paw-btn.svg");
+  background-size: 36px 36px;
+  background-position: top 7px right 7px;
+  background-repeat: no-repeat;
 }
 
 .btn--room-booking {
   background-color: #ff7236;
   color: #ffffff;
+  background-image: url("../img/paw-btn-white.svg");
+  background-size: 36px 36px;
+  background-position: top 7px right 7px;
+  background-repeat: no-repeat;
 }
 
 .display-hidden {
