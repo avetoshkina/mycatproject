@@ -221,13 +221,26 @@ body {
 }
 
 .rooms__list {
-  margin-left: auto;
+  margin-left: 168px;
 }
 
 .rooms__item {
+  position: relative;
+}
+
+.rooms__item__image {
+  width: 600px;
+  height: 404px;
+}
+
+.rooms__description {
+  position: absolute;
+  top: 40px;
+  left: 530px;
   width: 500px;
   padding-left: 100px;
   padding-top: 40px;
+  background-color: white;
 }
 
 .rooms__title {
@@ -448,6 +461,8 @@ body {
   font-family: "Lato", Arial, sans-serif;
   font-weight: 600;
   font-size: 16px;
+  outline: none;
+  cursor: pointer;
 }
 
 .btn--booking {
