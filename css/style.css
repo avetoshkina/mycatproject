@@ -518,3 +518,9 @@ a {
 .display-hidden {
   display: none;
 }
+
+/* КАТАЛОГ */
+
+.catalog__header {
+  text-align: left;
+}
